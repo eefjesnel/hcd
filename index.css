@@ -1,0 +1,97 @@
+html{
+    font-family: "Outfit", sans-serif;  
+}
+
+main > article:nth-of-type(1){
+    margin-top: 10rem;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 2rem 0;
+}
+
+strong:nth-of-type(1){
+    position: relative;
+}
+
+strong:nth-of-type(1)::after{
+    content: "";
+    position: absolute;
+    background-color: skyblue;
+    height: 2.5rem;
+    width: 10rem;
+    left: -.1rem;
+    z-index: -2;
+    animation: select 1s 1;
+}
+
+@keyframes select{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 10rem
+    }
+}
+
+.title strong:nth-of-type(2){
+    color: orange;
+}
+
+article:nth-of-type(1) div{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+article:nth-of-type(1) div p{
+    margin: 0 0 2rem 0;
+}
+
+.buttonStyling{
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    padding: .7rem 1.3rem;
+    cursor: pointer;
+    width: 8rem;
+}
+
+.buttonStyling:hover{
+    scale: 1.1;
+}
+
+article:nth-of-type(1) img{
+    width: 40vw;
+    height: 20rem;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+article:nth-of-type(1){
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+main > div{
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+main div article{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+}
+
+main div article p{
+    font-weight: 200;
+}
